@@ -1,5 +1,5 @@
 # kobo_uploadscript to batch upload kobo data (and images) to another form or server
-see below notes for usage
+see below notes for usage and thread on kobo community here: https://community.kobotoolbox.org/t/python-script-to-batch-upload-old-data-to-a-new-form-or-account-including-images-too/43478
 
 1/ prepare config file
 ----------------------
