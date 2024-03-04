@@ -10,14 +10,14 @@ modify upload_config.py to match your API token, form uid, and base url.
 ------------------------------
 to prepare the data you want to upload, download the excel data from kobo server by cliking on project -> data -> downloads.
 export the data with these settings: 
-#   select export type: xls
-#   value and header format: xml values and headers
-#   Export Select Many questions as… : Single column
-#   Include data from all 9 versions : tick
-#   Include groups in headers: tick
-#   group separator: /
-#   Store date and number responses as text : untick
-#   Include media URLs : tick
+*   select export type: xls
+*   value and header format: xml values and headers
+*   Export Select Many questions as… : Single column
+*   Include data from all 9 versions : tick
+*   Include groups in headers: tick
+*   group separator: /
+*   Store date and number responses as text : untick
+*   Include media URLs : tick
 download the exported file and place it in the same folder as the script.
 in excel, open the downloaded file and click save as  with filename "submission_data" and file type CSV-UTF8
 
