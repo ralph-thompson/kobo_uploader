@@ -30,6 +30,26 @@ If the data you are uploading has the same format, copy the xml headings into bo
 go through each line and put an x in the "mark_x_for_media" next to each new heading that will be a media file (tested with photos. milage may vary with other media types).
 CORRESPONDANCE_FILE = 'correspondance_template.xlsx'
 
+# Warning: 
+GPS coordinates are not handled automatically by the correspondance template at the moment. when you export data to excel, for some reason kobo removes any groups from the heading of the GPS column. To correctly transfer GPS points, you need to edit the GPS point line in the new_headings column in the correspondence_template.
+For example, copying the headings from a data export may give GPS headings like this:
+
+GPS_Location	
+group_fp6yl02/_GPS_Location_latitude	
+group_fp6yl02/_GPS_Location_longitude	
+group_fp6yl02/_GPS_Location_altitude	
+group_fp6yl02/_GPS_Location_precision
+
+which needs to be manually edited to read:
+
+group_fp6yl02/GPS_Location	
+group_fp6yl02/_GPS_Location_latitude	
+group_fp6yl02/_GPS_Location_longitude	
+group_fp6yl02/_GPS_Location_altitude
+group_fp6yl02/_GPS_Location_precision
+
+
+
 4/ add any media files
 ----------------------
 to get all media, download from project -> data -> downloads and export type: media files/zip. 
